@@ -1,3 +1,26 @@
+"""
+Fixed Array
+
+A fixed array has a predefined capacity that cannot change after
+it is created. Unlike a dynamic array, it does not resize when it
+becomes full, making its memory usage constant.
+
+Supported Operations
+--------------------
+Access      : O(1)
+Update      : O(1)
+Insert      : O(n)
+Delete      : O(n)
+
+Implementation Details
+----------------------
+- Capacity is fixed at initialization.
+- Tracks both the current size and the maximum capacity.
+- Insertions and deletions shift elements to maintain contiguous storage.
+- Empty slots are represented using None.
+"""
+
+
 class FixedArray:
     def __init__(self, data: list):
         self.data=data

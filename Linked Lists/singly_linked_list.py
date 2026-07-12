@@ -1,3 +1,27 @@
+"""
+Singly Linked List
+
+A singly linked list is a linear data structure where each node
+stores a value and a reference to the next node. Unlike arrays,
+elements are not stored in contiguous memory, allowing efficient
+insertions and deletions without shifting elements.
+
+Supported Operations
+--------------------
+Append      : O(n)
+Reverse     : O(n)
+Traversal   : O(n)
+
+Implementation Details
+----------------------
+- Each node stores a value and a pointer to the next node.
+- The list maintains a reference only to the head node.
+- Appending traverses to the last node before inserting.
+- Reversal is performed iteratively using three pointers:
+  previous, current, and after.
+"""
+
+
 class SinglyNode:
     def __init__(self, item):
         self.item = item

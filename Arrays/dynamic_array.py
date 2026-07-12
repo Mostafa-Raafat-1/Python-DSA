@@ -1,3 +1,30 @@
+"""
+Dynamic Array
+
+A dynamic array is a resizable array that automatically increases
+its capacity when it becomes full. This implementation starts with
+a capacity of 1 and doubles its capacity whenever resizing is
+required, ensuring efficient append operations.
+
+Supported Operations
+--------------------
+Access      : O(1)
+Append      : O(1) amortized
+Insert      : O(n)
+Delete      : O(n)
+Pop         : O(1)
+Resize      : O(n)
+
+Implementation Details
+----------------------
+- Capacity doubles whenever the array becomes full.
+- Existing elements are copied into the new array during resizing.
+- Supports both positive and negative indexing for get(), insert(),
+  and delete().
+- Keeps track of both the current size and the allocated capacity.
+"""
+
+
 class DynamicArray:
     def __init__(self):
         self.capacity = 1
@@ -36,7 +63,7 @@ class DynamicArray:
         return element
     
     def _convert_negative_index(self, index:int):
-        return index + self.size + 1
+        return index + self.size
 
     def insert(self, index:int, value):
         is_negative_index = index < 0
