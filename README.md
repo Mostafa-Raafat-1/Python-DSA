@@ -37,12 +37,14 @@ Python-DSA
 
 ### Linked Lists
 - Singly Linked List
+- Doubly Linked List
 
 ### Stacks
-- Coming soon
+- Using Python List
+- Using Singly Linked List
 
 ### Queues
-- Coming soon
+- Using Doubly Linked List
 
 ### Hash Tables
 - Coming soon
